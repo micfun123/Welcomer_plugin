@@ -1,13 +1,19 @@
 package tech.michaelparker.welcomer;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+import tech.michaelparker.welcomer.handlers.OnJoin;
 
 public final class Welcomer extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
 
+        Bukkit.getLogger().info("\n" + "\n" + "\n" + "WELCOMER" + "\n" + "\n" + "\n");
+        saveDefaultConfig();
+
+        // Register the event listener
+        getServer().getPluginManager().registerEvents(new OnJoin(this), this);
     }
 
     @Override
