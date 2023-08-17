@@ -30,6 +30,14 @@ public class OnJoin implements Listener {
                 //find and replace %player% with player name
                 String message = config.getString("welcome-back-message");
                 message = message.replace("%player%", player.getName());
+                //get the player's last seen date
+                long lastSeen = player.getLastPlayed();
+                //convert the last seen date to a string
+                String lastSeenString = new java.text.SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(new java.util.Date(lastSeen));
+                //find and replace %lastseen% with the last seen date
+                message = message.replace("%lastseen%", lastSeenString);
+
+
                 player.sendMessage(message);
             } else {
                 player.sendMessage("Welcome back to the server!");
