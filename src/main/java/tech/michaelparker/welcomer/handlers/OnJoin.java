@@ -38,16 +38,16 @@ public class OnJoin implements Listener {
                 message = message.replace("%lastseen%", lastSeenString);
 
 
-                player.sendMessage(message);
+                plugin.getServer().broadcastMessage(message);
             } else {
-                player.sendMessage("Welcome back to the server!");
+                plugin.getServer().broadcastMessage("Welcome back to the server!");
             }
         } else {
             if (config.contains("first-join-message")) {
                 //find and replace %player% with player name
                 String message = config.getString("first-join-message");
                 message = message.replace("%player%", player.getName());
-                player.sendMessage(message);
+                plugin.getServer().broadcastMessage(message);
 
 
                 // Give items to first-time players
@@ -65,7 +65,9 @@ public class OnJoin implements Listener {
                     }
                 }
             } else {
-                player.sendMessage("Welcome to the server!");
+                //global message to all players
+                plugin.getServer().broadcastMessage("Welcome to the server!, Its your first time here!");
+
             }
         }
     }
