@@ -1,5 +1,7 @@
 ﻿# Welcomer_plugin
 
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/Michaelrbparker)
  
 simple minecraft plugin for on join items and messages 
 
@@ -16,3 +18,5 @@ first-join-items:
   - GOLDEN_APPLE 2
 
 ```
+
+Modrinth = https://modrinth.com/plugin/welcomer
