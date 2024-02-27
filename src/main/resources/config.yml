@@ -1,7 +1,2 @@
-# config.yml
-first-join-message: "Welcome to the server! %player%"
+first-join-message: "Welcome to the server! %player%, look to [&red&Hello](https://example.com)"
 welcome-back-message: "Welcome back to the server! You were last seen on %lastseen%"
-first-join-items:
-  - DIAMOND 3
-  - IRON_SWORD 1
-  - GOLDEN_APPLE 2
