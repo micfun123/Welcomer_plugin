@@ -2,4 +2,4 @@ name: welcomer
 version: '${project.version}'
 main: tech.michaelparker.welcomer.Welcomer
 api-version: '1.20'
-authors: [Michael Parker AKA The TEA DRINKER]
+authors: [Michael Parker AKA The TEA DRINKER, fulcanelly]
