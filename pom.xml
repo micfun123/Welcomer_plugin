@@ -76,6 +76,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>de.themoep</groupId>
             <artifactId>minedown</artifactId>
             <version>1.7.1-SNAPSHOT</version>
