@@ -9,7 +9,7 @@ public final class Welcomer extends JavaPlugin {
     @Override
     public void onEnable() {
 
-        Bukkit.getLogger().info("\n" + "\n" + "\n" + "WELCOMER" + "\n" + "\n" + "\n");
+        Bukkit.getLogger().info("\n" + "\n" + "\n" + "WELCOME ALL TO THE WELCOME PLUGIN" +"\n"+ "https://buymeacoffee.com/michaelrbparker" +  "\n" + "\n" + "\n");
         saveDefaultConfig();
 
         // Register the event listener
